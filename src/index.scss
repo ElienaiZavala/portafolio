@@ -1,0 +1,45 @@
+$color-negro: #020618;
+$color-grisOscuro: #1F2233;
+$color-grisClaro: #C5C6C7;
+$color-cyan: #66FCF1;
+$color-cyanOscuro: #45A29E;
+
+@import "animation.css";
+
+@font-face{
+  font-family: "Blanka";
+  src: url("../src/assets/fonts/Blanka.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Elixia";
+  src: url("../src/assets/fonts/Elixia.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Muli regular";
+  src: url("../src/assets/fonts/Muli-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  color: var(--$color-grisClaro);
+  background-color: $color-negro;
+  overflow:hidden;
+  display: block;
+}
+
+input, textarea, select, p, a {
+  font-family: 'Muli Regular';
+  color: $color-grisClaro;
+}
+
+h1 {
+  font-family: 'Blanka';
+  color: $color-cyan;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Elixia';
+  color: $color-cyanOscuro;
+}
